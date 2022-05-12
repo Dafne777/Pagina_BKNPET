@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+
+    <!-- Boostrap y CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    <link rel="stylesheet" href="/css/estilos.css">
+
+    <!-- imagen de logo -->
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
+        integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js"
+        integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc"
+        crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4e1088;">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/img/logo.png" width="140" height="80" alt="">
+            </a>
+            
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/paginas/pagina_contacto.html">contactos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/paginas/pagina_registrar.html">Registrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/paginas/pagina_acerca_de.html">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<section>
+    <div class="contenedor text-center  mt-4">
+        <form id="form" method="POST">
+            <div class="form-group">
+                <label for="pokemon">Nombre Pokemon</label>
+                <input type="text" name="pokemon" class="form-control" id="pokemon" placeholder="Ingresa pokemon...">
+            </div>
+            <br>
+            <button type="submit" class="mt-2 btn btn-primary" id="submit-form">Buscar</button>
+        </form>
+            <div class="pokemon-container text-center  mt-4" id="info" >
+            </div>
+            <br>
+            <br>
+            <div class="mt-5">
+                <h4>Nombres pokemon de Ejemplo:</h4>
+                <p>pikachu</p>
+                <p>charmander</p>
+                <p>ivysaur</p>
+                <p>squirtle</p>
+                <p>caterpie</p>
+                <p>butterfree</p>
+                <p>kakuna</p>
+            </div>
+    </div>
+</section>
+
+
+
+
+
+
+    <footer>
+        <div class="card text-center mt-5">
+            <div class="card-header" >
+                <a href="/index.html" class="lo" style="color: white;">
+                    BKNPET  -   🐾Tienda de Mascotas.🐾 
+                </a>
+            </div>
+            <div class="card-body">
+                <h2>Contactos:</h2>
+                <div class="icon">
+                    <a href = "#" class = "fa fa-facebook" id="icon"></a>
+                    <a href = "https://api.whatsapp.com/send?phone=56981963332" class = "fa fa-whatsapp"  id="icon"></a>
+                    <a href = "https://www.instagram.com/bknpet/" class = "fa fa-instagram"  id="icon"></a>
+                    <a href = "#" class = "fa fa-envelope"  id="icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- simbolos de contacto -->
+    <script src="https://kit.fontawesome.com/ed0e803444.js" crossorigin="anonymous"></script>
+
+    <!-- js -->
+    <script src="/js/poke.js"></script>
+
+
+</body>
+</html>

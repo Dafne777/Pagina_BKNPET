@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+
+    <!-- Boostrap y CSS-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    <link rel="stylesheet" href="/css/estilos2.css">
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js" integrity="sha512-37T7leoNS06R80c8Ulq7cdCDU5MNQBwlYoy1TX/WUsLFC2eYNqtKlV0QjH7r8JpG/S0GUMZwebnVFLPd6SU5yg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+    <!-- imagen de logo -->
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #4e1088;">
+            <a class="navbar-brand" href="/index.html">
+                <img src="/img/logo.png" width="140" height="80" alt="">
+            </a>
+            
+            <ul class="nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/paginas/pagina_contacto.html">contactos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/paginas/pagina_registrar.html">Registrar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/paginas/pagina_acerca_de.html">Acerca de</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+<br>
+<br>
+<br>
+<br>
+    <section class="body">
+        <div class="container">
+            <div class="form-image">
+                <img src="/img/undraw_friends_r511.svg" alt="">
+            </div>
+            <div class="form">
+                <form method="post"  id="formulario">
+                    <div class="form-header">
+                        <div class="title">
+                            <h1>Bienvenido!</h1>
+                        </div>
+                    </div>
+    
+                    <div class="input-group">
+                        <div class="input-box">
+                            <label for="id_user">Username</label>
+                            <input id="id_user" type="text" name="user" placeholder="Ingrese Username" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="id_petname">Nombre Mascota</label>
+                            <input id="id_petname" type="text" name="petname" placeholder="Ingrese Nombre Mascota" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="id_email">E-mail</label>
+                            <input id="id_email" type="email" name="email" placeholder="Ingrese su email" required>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="contraseña">Contraseña</label>
+                            <input id="contraseña" type="password" name="contraseña" placeholder="Ingresa contraseña" required>
+                        </div>
+    
+                        <div class="input-box">
+                            <label for="confirmPassword">Confirma contraseña</label>
+                            <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Repita contraseña" required>
+                        </div>
+    
+                    </div>
+    
+                    <div class="gender-inputs">
+                        <div class="gender-title">
+                            <h6>Genero</h6>
+                        </div>
+    
+                        <div class="gender-group">
+                            <div class="gender-input">
+                                <input id="female" type="radio" name="gender">
+                                <label for="female">Femenino</label>
+                            </div>
+    
+                            <div class="gender-input">
+                                <input id="male" type="radio" name="gender">
+                                <label for="male">Masculino</label>
+                            </div>
+    
+                            <div class="gender-input">
+                                <input id="others" type="radio" name="gender">
+                                <label for="others">Otros</label>
+                            </div>
+    
+                            <div class="gender-input">
+                                <input id="none" type="radio" name="gender">
+                                <label for="none">Prefiero no decir</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="cmd-inputs mt-5">
+                        <div class="gender-title">
+                            <h6>Comuna</h6>
+                        </div>
+                        <div class="cmb-group">
+                            <select  class="required" name="city cmbCiudades">
+                                <option >Santiago</option>
+                                <option >Conchalí</option>
+                                <option >Huechuraba</option>
+                                <option >Independencia</option>
+                                <option >Quilicura</option>
+                                <option >Recoleta</option>
+                                <option >Renca</option>
+                                <option>Las Condes</option>
+                                <option >Lo Barnechea</option>
+                                <option >Providencia</option>
+                                <option >Vitacura</option>
+                                <option selected="selected" >No se encuentra comuna</option>
+                            </select>
+                        </div>
+                    </div>
+    
+                    <div class="continue-button">
+                        <button><a href="#">Continuar</a> </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</section>
+
+
+
+<br>
+<br>
+<br>
+    <footer>
+        <div class="card text-center mt-5">
+            <div class="card-header" >
+                <a href="/index.html" class="lo" style="color: white;">
+                    BKNPET  -   🐾Tienda de Mascotas.🐾 
+                </a>
+            </div>
+            <div class="card-body">
+                <h2>Contactos:</h2>
+                <div class="icon">
+                    <a href = "#" class = "fa fa-facebook" id="icon"></a>
+                    <a href = "https://api.whatsapp.com/send?phone=56981963332" class = "fa fa-whatsapp"  id="icon"></a>
+                    <a href = "https://www.instagram.com/bknpet/" class = "fa fa-instagram"  id="icon"></a>
+                    <a href = "#" class = "fa fa-envelope"  id="icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- simbolos de contacto -->
+    <script src="https://kit.fontawesome.com/ed0e803444.js" crossorigin="anonymous"></script>
+
+    <!-- js -->
+    <script src="/js/validador.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
